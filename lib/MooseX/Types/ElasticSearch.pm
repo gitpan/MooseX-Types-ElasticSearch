@@ -1,15 +1,15 @@
 #
 # This file is part of MooseX-Types-ElasticSearch
 #
-# This software is Copyright (c) 2011 by Moritz Onken.
+# This software is Copyright (c) 2012 by Moritz Onken.
 #
 # This is free software, licensed under:
 #
 #   The (three-clause) BSD License
 #
 package MooseX::Types::ElasticSearch;
-BEGIN {
-  $MooseX::Types::ElasticSearch::VERSION = '0.0.1';
+{
+  $MooseX::Types::ElasticSearch::VERSION = '0.0.2';
 }
 
 # ABSTRACT: Useful types for ElasticSearch
@@ -53,7 +53,7 @@ coerce ES, from ArrayRef, via {
                           timeout   => 30, );
 };
 
-enum QueryType, qw(query_and_fetch query_then_fetch dfs_query_and_fetch dfs_query_then_fetch);
+enum QueryType, qw(query_and_fetch query_then_fetch dfs_query_and_fetch dfs_query_then_fetch scan count);
 
 class_type ESDateTime;
 coerce ESDateTime, from Str, via {
@@ -85,7 +85,7 @@ MooseX::Types::ElasticSearch - Useful types for ElasticSearch
 
 =head1 VERSION
 
-version 0.0.1
+version 0.0.2
 
 =head1 SYNOPSIS
 
@@ -125,7 +125,7 @@ Moritz Onken
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Moritz Onken.
+This software is Copyright (c) 2012 by Moritz Onken.
 
 This is free software, licensed under:
 
