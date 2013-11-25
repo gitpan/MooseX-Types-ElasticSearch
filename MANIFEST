@@ -6,6 +6,7 @@ META.json
 META.yml
 README
 dist.ini
+dist.ini.bak
 lib/MooseX/Types/ElasticSearch.pm
 t/00-compile.t
 t/000-report-versions-tiny.t
