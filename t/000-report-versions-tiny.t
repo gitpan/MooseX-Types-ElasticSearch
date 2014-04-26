@@ -50,12 +50,12 @@ sub pmver {
 
 eval { $v .= pmver('DateTime::Format::Epoch::Unix','any version') };
 eval { $v .= pmver('DateTime::Format::ISO8601','any version') };
-eval { $v .= pmver('ElasticSearch','any version') };
 eval { $v .= pmver('File::Spec','any version') };
 eval { $v .= pmver('IO::Handle','any version') };
 eval { $v .= pmver('IPC::Open3','any version') };
 eval { $v .= pmver('Module::Build','0.3601') };
 eval { $v .= pmver('MooseX::Types','any version') };
+eval { $v .= pmver('Search::Elasticsearch','any version') };
 eval { $v .= pmver('Test::More','0.88') };
 
 
